@@ -1,0 +1,41 @@
+---------------------------------------------------------
+
+How to change database & migrate it:
+
+
+1. modify schema.yml
+2. symfony doctrine:generate-migrations-diff
+3. symfony doctrine:build --all-classes --and-migrate
+
+
+---------------------------------------------------------
+
+How to set specific migration
+
+    symfony doctrine:migrate 1
+    symfony doctrine:migrate 2
+    symfony doctrine:migrate 3
+    symfony doctrine:migrate 4
+
+
+
+---------------------------------------------------------
+
+
+How to start migrations?
+
+
+1. Create empty database with .bat/.sql
+2. Create schema.yml
+3. Generate classes
+
+    symfony doctrine:build --all-classes
+
+4. Create first migration:
+
+    symfony doctrine:generate-migrations-model
+
+5. Migrate database:
+
+    symfony doctrine:migrate
+
