@@ -2,10 +2,12 @@ symfony generate:project symfony-1-4-social-startup
 symfony generate:app frontend
 symfony generate:app backend
 symfony configure:database "mysql:host=localhost;dbname=DATABASENAME" redaktor tajnehaslo
-
-
-
 symfony generate:module frontend main
+symfony generate:module backend main
+
+
+
+
 
 
 symfony plugin:install sfDoctrineGuardPlugin
