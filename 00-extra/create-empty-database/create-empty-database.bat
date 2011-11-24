@@ -1,0 +1,1 @@
+mysql -u root -pPASSWORD < create-empty-database.sql

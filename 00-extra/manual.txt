@@ -1,0 +1,6 @@
+1. Set mysql root password in 
+   00-extra/create-empty-database/create-empty-database.bat
+
+2. Set database name:
+    - 00-extra/create-empty-database/create-empty-database.sql
+    - config/databases.yml
