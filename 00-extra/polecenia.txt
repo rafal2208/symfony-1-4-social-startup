@@ -1,0 +1,21 @@
+symfony generate:project symfony-1-4-social-startup
+symfony generate:app frontend
+symfony generate:app backend
+symfony configure:database "mysql:host=localhost;dbname=DATABASENAME" redaktor tajnehaslo
+
+
+
+symfony generate:module frontend main
+
+
+symfony plugin:install sfDoctrineGuardPlugin
+symfony plugin:publish-assets
+
+
+symfony doctrine:build --all --no-confirmation --and-load
+symfony doctrine:build --all --no-confirmation
+
+
+symfony doctrine:data-load data/fixtures/miasta.yml
+symfony doctrine:data-load data/fixtures/info.yml
+

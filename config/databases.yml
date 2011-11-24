@@ -1,10 +1,8 @@
-# You can find more information about this file on the symfony website:
-# http://www.symfony-project.org/reference/1_4/en/07-Databases
-
-all:
+dev:
   doctrine:
     class: sfDoctrineDatabase
     param:
-      dsn:      mysql:host=localhost;dbname=symfony-1-4-social-startup
-      username: root
-      password: 
+      dsn:       'mysql:host=localhost;dbname=DATABASENAME;port=3306'
+      username:  redaktor
+      password:  tajnehaslo
+      charset:   utf8
