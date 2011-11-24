@@ -1,0 +1,11 @@
+prod:
+  frontend_base_url:  http://app.localhost
+  backend_base_url:   http://admin.app.localhost
+
+staging:
+  frontend_base_url:  http://app.localhost
+  backend_base_url:   http://admin.app.localhost
+
+dev:
+  frontend_base_url:  http://app.localhost
+  backend_base_url:   http://admin.app.localhost
